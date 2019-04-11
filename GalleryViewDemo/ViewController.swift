@@ -10,11 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var GalleryView: GalleryView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        configurGalleryView()
     }
-
-
+    
+    private func configurGalleryView() {
+        let models = [MyGalleryViewCellModel(imageName: "tarot_01"),
+                      MyGalleryViewCellModel(imageName: "tarot_02"),
+                      MyGalleryViewCellModel(imageName: "tarot_03")]
+        
+        GalleryView.configure(models: models, customCellNib: UINib(nibName: "MyGalleryViewCell", bundle: .main), backgroundColor: .black)
+    }
 }
 
