@@ -9,3 +9,5 @@
 2. make your own cell model conform to GalleryViewCellModelProtocol
 3. invoke GalleryView's func configure(models: [GalleryViewCellModelProtocol], customCellNib: UINib, backgroundColor: UIColor = default)
 
+![Apr-11-2019 23-03-21](https://user-images.githubusercontent.com/46996132/55959998-44835280-5caf-11e9-8726-773dd7921571.gif)
+
